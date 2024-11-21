@@ -38,7 +38,7 @@ def manual_anno(subgraph, question, filepath="/Users/maxonrubin-toles/Desktop/Co
         return 0
     else:
         # The annotation doesn't exist, prompt the user
-        
+        print(idxs)
         # Topologically sort the entire dependency graph
         if calib_method == "graph":
             sorted_indices = topological_sort(dep_graph)
